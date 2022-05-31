@@ -1,0 +1,32 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Valorant turnering",
+      "date": "2022-05-30",
+      "time": "12:15",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi voluptate nostrum dolorum nihil, tenetur nisi, libero quidem fugiat, assumenda laboriosam vitae eaque eum eveniet optio vel nulla perferendis nemo!"
+    },
+    {
+      "id": 2,
+      "title": "Live på Twitch",
+      "date": "2022-06-01",
+      "time": "13:35",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi voluptate nostrum dolorum nihil, tenetur nisi, libero quidem fugiat, assumenda laboriosam vitae eaque eum eveniet optio vel nulla perferendis nemo!"
+    },
+    {
+      "title": "Ut och träna med Vovven",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi voluptate nostrum dolorum nihil, tenetur nisi, libero quidem fugiat, assumenda laboriosam vitae eaque eum eveniet optio vel nulla perferendis nemo!",
+      "date": "2022-06-07",
+      "time": "17:15",
+      "id": 3
+    },
+    {
+      "title": "ssdfsdf",
+      "date": "2022-06-01",
+      "time": "16:15",
+      "body": "sdfsa dfsdf sdf asdf",
+      "id": 4
+    }
+  ]
+}
