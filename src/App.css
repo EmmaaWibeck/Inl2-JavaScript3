@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body, html {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 .container {
   width: 80%;
@@ -35,13 +36,15 @@ body, html {
   align-items: center;
   width: 25%;
 }
-
-.nav-link {
-  color: #fff;
+.nav-links li {
   text-decoration: none;
   padding: .5rem;
   font-size: 1.1rem;
 }
+.nav-link {
+  color: #fff;
+}
+
 .nav-link:hover {
   color: #adabbe;
 }
@@ -49,8 +52,7 @@ body, html {
   text-decoration: underline;
   color: #ececec;
 }
-
-.post {
+.event {
   box-shadow: 5px 5px 10px #33333382;
   margin: 2rem 0;
   padding: 2rem;
@@ -60,38 +62,50 @@ body, html {
   color: #333;
   border-left: 18px solid #8f8d8d;
 }
-.post h2,
-.post p {
+.event h2,
+.event p {
   color: #8f8d8d;
 }
-
-.create-post {
+form {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.create-event {
   padding: 2rem 0;
 }
-
-.create-post h1 {
+.create-event h1 {
   text-align: center;
   margin-bottom: 2rem;
 }
-
 .form-control {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
   padding: .5rem;
-  border-radius: .5rem;
-  border: 1px solid #bababa;
+  border:none;
+  border-bottom: 1px solid #333;
   outline: none;
+  font-size: 1.1rem;
 }
-
-.create-post textarea {
+input.form-control {
+  border: none;
+  border-bottom: 1px solid #333;
+  padding: .5rem 0;
+  margin-top: 1rem;
+}
+input.form-control:focus {
+  border: none;
+  border-bottom: 1px solid #8a7667;
+}
+textarea.form-control {
+  border: 1px solid #333;
+  padding: .5rem;
   resize: none;
+  height: 200;
 }
-
-.form-control:focus {
-  border: 1px solid #141414;
+textarea.form-control:focus {
+  border-color: #8a7667;
 }
-
 .btn {
   padding: .5em 1.2em;
   border-radius: .5em;
@@ -102,71 +116,50 @@ body, html {
   text-transform: uppercase;
   cursor: pointer;
 }
-
-.login-view {
-  padding-top: 2rem;
-}
-
 .card {
   border: 1px solid #3333332e;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 3px 3px 5px #3333332e;
 }
-
 .card h2 {
   color: #333;
 }
-
+.input-group {
+  padding-top: 1rem;
+}
 .input-group label {
   display: block;
   margin-bottom: .3rem;
 }
-
-.link {
-  color: darkslateblue;
-  font-weight: bold;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.card .btn {
-  margin-block: 1rem;
-}
-
 .d-flex {
   display: flex;
 }
-
 .tdt {
   justify-content: space-between;
 }
-
 .detailedTimeDate {
   justify-content: center;
 }
-
 .detailedTimeDate h3 {
   padding-right: 1rem;
 }
-
 .dateAndTime h3 {
   padding-right: 1rem;
 }
-
-
 .pr-1 {
   padding-right: 1rem;
 }
-
 .bl {
     border-left: 18px solid #8f8d8d;
 }
-
 .failure {
   color: red;
 }
-
 .mb-1 {
   margin-bottom: 1rem;
+}
+.headlineCreate {
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
 }

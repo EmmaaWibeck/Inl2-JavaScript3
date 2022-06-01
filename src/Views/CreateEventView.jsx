@@ -54,26 +54,28 @@ const CreateEventView = () => {
   }, [loading, addedEvent, navigate])
 
   return (
-    <div className='create-post'>
+    <div className='create-event'>
       <h1>Create new Event</h1>
       <form onSubmit={handleSubmit}>
         <div className="input-group">
-          <label htmlFor="title" className='input-label'> Title *</label>
-          <input type="text" name='title' className='form-control' id='title' value={formData.title} onChange={onChange}/>
+          <label htmlFor="title" className='input-label'> <p className='headlineCreate'>Title *</p> </label>
+          <input type="text" name='title' className='form-control title' id='title' value={formData.title} onChange={onChange}/>
         </div>
         <div className="input-group">
-            <label htmlFor="date" className='input-label'> Date *</label>
+            <label htmlFor="date" className='input-label'><p className='headlineCreate'> Date *</p></label>
             <input type="date" name='date' className='form-control date' id='date' value={formData.date} onChange={onChange}></input>
           </div>
           <div className="input-group">
-            <label htmlFor="time" className='input-label'> Time *</label>
+            <label htmlFor="time" className='input-label'><p className='headlineCreate'> Time * </p></label>
             <input type="time" name='time' className='form-control time' id='time' value={formData.time} onChange={onChange}></input>
             <p></p>
           </div>
-          <label htmlFor="body" className='input-label'> Information *</label>
-          <textarea name="body" className='form-control' cols="30" rows="10" value={formData.body} onChange={onChange} placeholder='please enter some text...'></textarea>
-          {!validation && <p className='failure mb-1'>Check your title, date, time and information input, they can not be empty.</p>}
-          <button className='btn'>{ loading ? 'Loading...' : 'Add post'}</button>
+          <div className="input-group">
+            <label htmlFor="body" className='input-label'><p className='headlineCreate'> Information *</p></label>
+            <textarea name="body" className='form-control' cols="30" rows="10" value={formData.body} onChange={onChange} placeholder='please enter some text...'></textarea>
+          </div>
+            {!validation && <p className='failure mb-1'>Check your title, date, time and information input, they can not be empty.</p>}
+            <button className='btn'>{ loading ? 'Loading...' : 'Add Event'}</button>
       </form>
     </div>
   )
